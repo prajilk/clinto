@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import dotenv from 'dotenv'
 import { OAuth2Client } from 'google-auth-library';
 import { sendOtpEmail } from "../helper/mailer.js";
-import connectDB from "../Database/connectDB.js";
+import connectDB from "../Database/db.js";
 
 
 
@@ -261,7 +261,7 @@ export const studentSignup = async (req, res) => {
     }
 
 
-     
+
 
     await connectDB();
 

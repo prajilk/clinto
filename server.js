@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from 'dotenv';
-import ConnectDB from "./Database/connectDB.js";
+import ConnectDB from "./Database/db.js";
 import CourseRoute from "./Route/CourseRoute.js";
 import McqRoute from "./Route/McqRoute.js";
 import PracticeplanRoute from "./Route/PracticeplanRoute.js";
@@ -12,8 +12,7 @@ import PaymentRoute from "./Route/PaymentRoute.js"
 import TodaysQuestionRoute from "./Route/TodaysQuestionRoute.js"
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import connectDB from "./Database/ConnectDB.js";
-
+import connectDB from "./Database/db.js";
 
 await connectDB();
 
